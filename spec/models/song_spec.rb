@@ -25,6 +25,7 @@ RSpec.describe Song, type: :model do
   end
 
   it "is invalid without release year when released is true" do
+    # binding.pry
     expect(Song.new(missing_release_year)).to be_invalid
   end
 
